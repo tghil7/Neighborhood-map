@@ -1,4 +1,6 @@
- /* Always set the map height explicitly to define the size of the div
+@media screen and (max-width: 700px)
+{
+/* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
     #map {
         height: 100%;
@@ -11,5 +13,57 @@
       }
 	  
 	#filter{
-	    
+          padding-top: 1%;
+	      height: 100%;
+		  width: 25%;
+		  position: fixed;
+		  z-index: 999;
+		  color: white;
+		  background-color: black;
 		}
+		
+   filter > a {
+	color: white;
+       }
+	   
+	ul{list-style-type: none;}
+}
+
+.sameHeight{
+	height: 48px;
+}
+
+@media screen and (min-width: 701px){
+	#map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  
+	#filter{
+          padding-top: 1%;
+	      height: 100%;
+		  width: 25%;
+		  position: fixed;
+		  z-index: 999;
+		  color: white;
+		  background-color: black;
+		}
+		
+   
+	   
+	ul{
+		list-style-type: none;
+		color: white;
+		}
+		
+	.sameHeight{
+	height: 34px;
+	}
+
+	
+}
