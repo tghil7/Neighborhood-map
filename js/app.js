@@ -154,7 +154,7 @@ function geocodeAddress(geocoder, resultsMap, myLocation) {
 					"<br/>"+ "Rating:" + data.response.venue.rating + "</div>");
 					
 	
-				})
+				})//Error message to post on the console.
 				.fail(function() {
 					console.log( "Unable to retrieve  foursquare data about this location ");
 				});
