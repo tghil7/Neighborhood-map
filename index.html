@@ -14,21 +14,28 @@
 
   </head>
   <body>
-  
-    <div id="filter" >
-	<input type="text" placeholder="Specify location" class="sameHeight"  id="search" />
-	<button class= "btn btn-primary" type="button" class="sameHeight">Filter </button>
-		<div data-bind="foreach:locations">
-			<ul>
-			     <li ><a href="#" data-bind="text:name"></a></li>
-			</ul>
-		</div>	
+    <button class="btn btn-default" data-toggle="collapse" data-target="#filter" role="button" type="button" ><span  class="glyphicon glyphicon-th-list"></span></button>
+    <div id="filter" class="collapse" >
+			<select id="selectedCategory"  class="sameHeight">
+				<option value="All" >All</option>
+				<option value="Restaurants" >Restaurant</option>
+				<option value="Entertainment" >Entertainment</option>
+				<option value="Museums and Monuments" >Museums & Monuments</option>
+			</select>
+		
+
+			<button class= "btn btn-primary" type="button" data-bind="click:filterLocation" class="sameHeight">Filter </button>
+			<div id =myPlaces" data-bind="foreach:locations">
+				<ul>
+					<li id="locationLink" data-bind="text:name, visible: visible, click:$parent.controlMarker"></li>
+				</ul>
+			</div>
 	</div>
 	
     <div id="map"></div>
     
     <script async defer 
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Q844IiY5MQVZ3xzu7EG5dqueju_Kv5c&callback=initMap"
-    ></script>
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Q844IiY5MQVZ3xzu7EG5dqueju_Kv5c&callback=initMap">
+	</script>
   </body>
 </html>
