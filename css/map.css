@@ -1,106 +1,108 @@
-@media screen and (max-width: 700px)
-{
+@media screen and (max-width: 700px) {
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
     #map {
         height: 100%;
-      }
+    }
       /* Optional: Makes the sample page fill the window. */
-    html, body {
+    html, 
+	body {
         height: 100%;
         margin: 0;
         padding: 0;
-      }
+    }
 
-#placeMenu
-{
-    position: fixed;
-    top: 5%;
-    left:5%;
-    justify-content: center;
-    z-index: 100;
-    order: 1;
-    font-size: x-small;
+    #placeMenu {
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        justify-content: center;
+        z-index: 100;
+        order: 1;
+        font-size: x-small;
+    }
+
+    #inlineMenu {
+        display: none;
+    }
+
+    #myPlaces {
+        width: 100%;
+        margin-top: 1%;
+        padding-top: 1%;
+    }
+
+    #filter {
+        padding-top: 3%;
+        height: 45%;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        color: white;
+        background-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        width: 100%;
+    }
+
+    li {
+        width: 70%;
+    };
 }
 
-#inlineMenu{display: none;}
-	
-#myPlaces{
-	width:100%;
-	margin-top: 1%;
-	padding-top:1%;
-}
-	  
-#filter{
-          padding-top: 3%;
-	      height: 45%;
-		  width: 100%;
-		  position: fixed;
-		  z-index: 999;
-		  color: white;
-		  background-color: black;
-		}
-	   
-	ul{list-style-type: none;
-		width: 100%;}
-		
-	li{width: 70%;}
-}
-
-.sameHeight{
-	height: 48px;
-	color: black !important;
-	width: 100%;
+.sameHeight {
+    height: 48px;
+    color: black !important;
+    width: 100%;
 }
 
 /*LARGER SCREENS */
-@media screen and (min-width: 701px){
-	#map {
+@media screen and (min-width: 701px) {
+    #map {
         height: 100%;
-      }
-	  
-	#myPlaces{
-	width:100%;
-	 margin-top: 1%;
-	 padding-top:1%;
-	}
+    }
+
+    #myPlaces {
+        width: 100%;
+        margin-top: 1%;
+        padding-top: 1%;
+    }
       /* Optional: Makes the sample page fill the window. */
     html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-      }
-#placeMenu
-{
-  display: none;
-}	  
-	
-	  
-	#filter{
-          padding-top: 1%;
-	      height: 100%;
-		  width: 25%;
-		  position: fixed;
-		  z-index: 999;
-		  color: white;
-		  background-color: black;
-		}
-		
-   
-	   
-	ul{
-		list-style-type: none;
-		color: white;
-		width: 100%;
-		}
-		
-	li{width: 100%;}
-		
-	.sameHeight{
-	height: 34px;
-	color: black !important;
-	width: 100%;
-	}
+    }
 
-	
+    #placeMenu {
+        display: none;
+    }
+
+    #filter {
+        padding-top: 1%;
+        height: 100%;
+        width: 25%;
+        position: fixed;
+        z-index: 999;
+        color: white;
+        background-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        color: white;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .sameHeight {
+        height: 34px;
+        color: black !important;
+        width: 100%;
+    };
 }
